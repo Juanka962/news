@@ -22,7 +22,7 @@
             <li class="nav-item">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{ user.username }}
-              </a>
+              </a><a href="{% url 'article_new' %}">+ Nuevo</a>
               <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{% url 'password_change'%}">Cambiar contraseña</a>
                 <div class="dropdown-divider"></div>

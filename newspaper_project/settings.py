@@ -37,11 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #3rd Party
+    # 3rd Party
     'crispy_forms',
-    #Local
+    # Local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 ]
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
@@ -129,12 +130,12 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
-CRISPY_TEMPLATE_PACK ='bootstrap4'
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'juankaherreragarcia@hotmail.com'
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'juancarlos96'
+EMAIL_HOST_USER = 'juanka962'
 EMAIL_HOST_PASSWORD = 'Mynameisjuanka96'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+TIME_ZONE = 'Europe/Madrid'
